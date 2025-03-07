@@ -1,6 +1,6 @@
 # 🏠 Floor Plan Retrieval with OpenAI & ChromaDB
 
-This project enables **semantic search** for architectural **floor plans** using **OpenAI embeddings** and **ChromaDB**. Users can search for floor plans using natural language queries, and the most relevant images are retrieved and displayed.
+This project enables **Semantic Search** for architectural **Floor Plans** using **OpenAI Embeddings** and **ChromaDB**. Users can search for floor plans using natural language queries, and the most relevant images are retrieved and displayed.
 
 ## 📌 Features
 - ✅ **Store & Search Floor Plans** – Uses OpenAI embeddings to store and retrieve images.  
@@ -19,11 +19,12 @@ This project enables **semantic search** for architectural **floor plans** using
 │── 📄 README.md # This file!  
 
 
+
 ## 🔧 Installation
 
 ### 1️⃣ Clone the Repository
 bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/your-username/Floor-Plan-Retrieval-with-Semantic-AI-Search.git
 cd your-repo-name
 
 ### 2️⃣ Install Dependencies
@@ -35,6 +36,8 @@ pip install -r requirements.txt
 Get your OpenAI API key from OpenAI Dashboard.
 Store it securely (do not hardcode it).
 You can set it dynamically when running the app.
+
+
 
 ## 🚀 Usage
 
@@ -53,6 +56,8 @@ streamlit run floor_plan_app.py
 ### 3️⃣ Search for Floor Plans
 Enter a natural language query (e.g., "2BHK apartment with 1000 sqft").
 The system retrieves and displays similar floor plan images.
+
+
 
 ## 🛠 Troubleshooting
 
@@ -78,8 +83,10 @@ bash:
 python -c "import chromadb; db = chromadb.PersistentClient(path='chroma_db'); print(db.get_collection('floor_plans').get())"
 If empty, re-run floor_plan_indexer.py.
 
+
 ## 🤝 Contributing
 Feel free to submit issues or pull requests! 🚀
+
 
 ## 📜 License
 This project is licensed under the MIT License.
