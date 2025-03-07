@@ -36,25 +36,25 @@ Get your OpenAI API key from OpenAI Dashboard.
 Store it securely (do not hardcode it).
 You can set it dynamically when running the app.
 
-🚀 Usage
-1️⃣ Index Floor Plans
+##🚀 Usage
+#1️⃣ Index Floor Plans
 Run the indexer to store embeddings in ChromaDB:
 
 bash:
 python floor_plan_indexer.py
 
-2️⃣ Run the Web App
+#2️⃣ Run the Web App
 Launch the Streamlit app:
 
 bash:
 streamlit run floor_plan_app.py
 
-3️⃣ Search for Floor Plans
+#3️⃣ Search for Floor Plans
 Enter a natural language query (e.g., "2BHK apartment with 1000 sqft").
 The system retrieves and displays similar floor plan images.
 
-🛠 Troubleshooting
-1️⃣ Image Not Found?
+##🛠 Troubleshooting
+#1️⃣ Image Not Found?
 Make sure the floor_plans/ folder contains images.
 Check file paths in floor_plan_metadata.json:
 json:
@@ -64,20 +64,20 @@ Run:
 bash:
 python -c "import os; print(os.listdir('floor_plans'))"
 
-2️⃣ OpenAI API Errors?
+#2️⃣ OpenAI API Errors?
 Ensure the API key is correct.
 Upgrade OpenAI package:
 bash:
 pip install --upgrade openai
 
-3️⃣ ChromaDB Not Searching?
+#3️⃣ ChromaDB Not Searching?
 Run:
 bash:
 python -c "import chromadb; db = chromadb.PersistentClient(path='chroma_db'); print(db.get_collection('floor_plans').get())"
 If empty, re-run floor_plan_indexer.py.
 
-🤝 Contributing
+##🤝 Contributing
 Feel free to submit issues or pull requests! 🚀
 
-📜 License
+##📜 License
 This project is licensed under the MIT License.
