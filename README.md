@@ -85,7 +85,7 @@ If empty, re-run floor_plan_indexer.py.
 
   
 ## 🤝 Contributing
-Feel free to submit issues or pull requests! 🚀
+Feel free to submit issues or pull requests!
 
   
 ## 📜 License
