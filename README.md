@@ -19,7 +19,7 @@ This project enables **Semantic Search** for architectural **Floor Plans** using
 │── 📄 README.md # This file!  
 
 
-
+  
 ## 🔧 Installation
 
 ### 1️⃣ Clone the Repository
@@ -38,7 +38,7 @@ Store it securely (do not hardcode it).
 You can set it dynamically when running the app.
 
 
-
+  
 ## 🚀 Usage
 
 ### 1️⃣ Index Floor Plans
@@ -58,7 +58,7 @@ Enter a natural language query (e.g., "2BHK apartment with 1000 sqft").
 The system retrieves and displays similar floor plan images.
 
 
-
+  
 ## 🛠 Troubleshooting
 
 ### 1️⃣ Image Not Found?
@@ -83,10 +83,10 @@ bash:
 python -c "import chromadb; db = chromadb.PersistentClient(path='chroma_db'); print(db.get_collection('floor_plans').get())"
 If empty, re-run floor_plan_indexer.py.
 
-
+  
 ## 🤝 Contributing
 Feel free to submit issues or pull requests! 🚀
 
-
+  
 ## 📜 License
 This project is licensed under the MIT License.
